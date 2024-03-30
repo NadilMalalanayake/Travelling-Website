@@ -1,2 +1,0 @@
-# Travelling-Website
-Group Project
