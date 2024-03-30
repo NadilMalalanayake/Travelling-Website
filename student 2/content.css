@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-item {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.content-hover {
+    position: relative;
+}
+
+.content-hover:hover .description {
+    transform: translateX(20px);
+    opacity: 1;
+}
+
+.content-hover img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.description h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.description p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}

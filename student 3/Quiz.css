@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('background1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.start_btn,
+.info_box,
+.quiz_box,
+.result_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult{  /* javascript prt */
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* style the button */
+.start_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #ffffffa4;
+    cursor: pointer;
+    
+}
+.start_btn button:hover{
+    background: #848da8;
+    /* padding: 40px; */
+    border: 4px rgb(255, 255, 255) groove;
+}
+
+.info_box{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    border-style: solid;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+.info_box .info_title{
+    background-color:rgba(99, 93, 93, 0.479);
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid rgb(8, 8, 8);
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;/*bold sentence*/
+}
+.info_box .info_list{
+    padding: 15px 30px;
+}
+.info_box .info_list .info{
+    color:black;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 5px 0;
+}
+.info_box .buttons{
+    border-top:2px solid lavender; /*intruction under small boarder*/
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-radius: 5px;
+}
+.info_box .buttons button{
+    margin:0 5px;
+    height: 40px;
+    width:100px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color:black;
+    border-top:1px solid rgb(41, 41, 58);
+    transition: all 0.4s ease;
+}
+.info_box .buttons .quit{
+    background:lightgray;
+}
+.info_box .buttons .rest{
+    background:grey;
+}
+.buttons .quit:hover{
+    background: rgb(131, 124, 124);
+}
+.buttons .rest:hover{
+    background: rgb(110, 93, 93);
+    opacity: 1;
+}
+.quiz_box{
+    width: 500px;
+    background: #fff;
+    border-radius: 5px;
+    border-style: solid;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%) scale(0.9);
+    
+}
+.quiz_box header{
+    position: relative;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius:5px 5px 0 0;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+}
+.quiz_box header .title{
+    font-weight: 600;
+    font-size: 20px;
+}
+.quiz_box header .timer{
+   display: flex;
+   align-items:center ;
+   justify-content: space-between;
+   width: 145px;
+   height: 45px;
+   background: #848da8;
+   border: 1px solid rgb(93, 91, 124);
+   border-radius: 5px;
+   padding:0 8px;
+}
+.quiz_box header .time_text{
+    font-weight: 400;
+    font-size: 17px;
+}
+.quiz_box header .time_sec{
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+}
+.quiz_box section{
+    padding:25px 30px 20px 30px;
+    background: #fff;
+
+}
+.quiz_box section .quec{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.quiz_box section .option_list{
+    padding:20px 0;
+    display: block;
+}
+.quiz_box section .option{
+    background: #e7e9f0;
+    border:1px solid lightblue;
+    border-radius: 5px;
+    padding:8px 15px;
+    margin-bottom:6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+section .option_list .option:hover{
+    color:rgb(181, 201, 214);
+    background: #e7e9f0;
+
+}
+.option_list .option.correct{  /* js part gor answer color */
+    color:lightgreen;
+    background:green;
+    border-color: #fff;
+}
+.option_list .option.incorrect{
+    color:rgb(245, 199, 199);
+    background: red;
+    border-color: #fff;
+}
+.option_list .option.disabled{
+    pointer-events: none;
+}
+.quiz_box footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+.quiz_box footer .total_quec span{
+    display:flex;
+    
+ }
+footer .total_quec span p{
+   padding:0 5px;
+   font-weight: 600;
+}
+footer .next_btn{
+    display: none;
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom:7px;
+    border: none;
+    border-radius: 5px;
+    background: gray;
+    cursor: pointer;
+}
+footer .next_btn:hover{
+    background: #757883;
+}
+.result_box{
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    border-style: solid;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.box_pic img{
+    margin-top:10px;
+    border-radius:20%;
+    box-shadow: 0 5px 10px rgba(75, 15, 15, 0.2);
+}
+.result_box .complete_text{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.result_box .score_text span{
+    display: flex;
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.score_text span p{
+    padding:0 5px;
+    font-weight: 600;
+}
+.result_box .buttons{
+    display: flex;
+    margin: 15px 0;
+}
+.result_box .buttons button{
+    margin: 0 10px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(40, 44, 46);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}

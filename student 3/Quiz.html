@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Quiz.css" />
+    <link rel="stylesheet" href="header2.css" />
+    <link rel="stylesheet" href="footer2.css" />
+  </head>
+
+  <header class="begin">
+    <div class="logo">
+      <a href="../mainpage.html" class="logoheader">
+        <img src="Travel Lanka1.png" alt="Site Logo" />
+      </a>
+    </div>
+    <nav>
+        <a href="about.html">About us</a>
+        <a href="Quiz.html">Quiz </a>
+        <a href="../student 4/svgdiagram.html">Site map</a>
+        <a href="../comment.html">Comment Form</a>
+        <a href="../student 1/buyproducts.html">Shop</a>
+        <a href="../student 4/image_gellary_cw.html">Gallery</a>
+        <a href="../mainpage.html">Home</a>
+    </nav>
+  </header>
+
+  <body>
+    <!-- quiz start button -->
+    <div class="start_btn" id="start"><button>Start Quiz</button></div>
+
+    <!-- info box -->
+    <div class="info_box">
+      <div class="info_title">
+        <span>Some rules before start the Quiz</span>
+      </div>
+      <div class="info_list">
+        <div class="info">
+          1. You will have only 10 seconds per each Questions
+        </div>
+        <div class="info">2. You can't exit the Quiz while you are playing</div>
+        <div class="info">
+          3. Once you select your answer ,it cant be undone
+        </div>
+        <div class="info">
+          4. you will get points on the correct answers end of the Quiz
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="rest">Continue</button>
+      </div>
+    </div>
+    <!-- quiz box create -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Answer Quiz Application</div>
+        <div class="timer">
+          <div class="time_text">Time left</div>
+          <div class="time_sec">10</div>
+        </div>
+      </header>
+      <section>
+        <div class="quec"></div>
+        <div class="option_list"></div>
+      </section>
+      <!-- quiz box footer -->
+      <footer>
+        <div class="total_quec">
+          <!-- <span><p>2</p>of<p>10</p>Qections</span> -->
+        </div>
+        <button class="next_btn">Next Que</button>
+      </footer>
+    </div>
+
+    <!-- result box -->
+    <div class="result_box">
+      <div class="box_pic">
+        <img src="right.jpg" width="150px" height="150px" />
+      </div>
+      <div class="complete_text">You have completetd the Quiz!</div>
+      <div class="score_text">
+        <!-- <span>Sorry, You get only <p>2</p>out of <p>10</p></span> -->
+        <!-- <span>You took :<p>time</p></span> -->
+      </div>
+      <div class="buttons">
+        <button class="rest">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/question.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/Quiz.js"></script>
+  </body>
+  <footer class="end">
+    <div class="container1">
+      <div class="logo">
+        <a href="../mainpage.html ">
+          <img
+            src="Travel Lanka1.png"
+            alt="Site Logo "
+            width="80px"
+            height="80px"
+          />
+        </a>
+      </div>
+      <div class="links">
+        <a href="../mainpage.html">Home</a>
+        <a href="../student 4/image_gellary_cw.html">Gallery</a>
+        <a href="../student 1/buyproducts.html">Shop</a>
+        <a href="../comment.html">Comment Form</a>
+        <a href="Quiz.html"> Quiz</a>
+        <a href="../student 4/svgdiagram.html">Site map</a>
+        <a href="about.html ">About us</a>
+
+      </div>
+      <div class="info">
+        <p>123 Main St, Anytown USA</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@site.com</p>
+      </div>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,51 @@
+/* footer css part*/
+.container1 {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo img {
+  max-height: 100px;
+  max-width: 100px;
+  
+}
+
+.info p {
+  margin: 5px 0;
+}
+.info{
+  font-size: 13px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 10px;
+}
+
+.links a:hover {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  bottom:-600px;
+  margin-bottom: 240px;
+}

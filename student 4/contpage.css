@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+    
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-image: url("web_documents/sri lanka.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+        
+  }
+  
+
+  
+  /* Header styles */
+  header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    margin-left: 16px;
+  }
+  
+  nav {
+    background-color: #ffffff;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+nav a {
+    
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 2px solid black;
+}
+  
+  /* Blog post styles */
+  .blog-post {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffffbf;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .blog-hero {
+    background-image: url('leopard.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blog-hero h2 {
+    color: #000000;
+    font-size: 48px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  .blog-content h3 {
+    margin-top: 50px;
+    font-size: 24px;
+
+  }
+  
+  .blog-content p {
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .para1 {
+    max-width: 700px;
+    text-align: justify;
+    margin: 15px;
+  }
+  
+  .image-box{
+    /*display: inline-block;
+    width: 45%;
+    margin-right: 10px;*/
+    text-align: center;
+    display: flex;
+    justify-content: space-between ;
+    gap: 10px;
+    
+  }
+  .image2 {
+    max-width: 60%;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    
+    width: 50%; 
+  }
+  
+  /* Ending styles */
+  .ending {
+    text-align: justify;
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 600px) {
+    nav {
+      flex-wrap: wrap;
+    }
+  
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .blog-hero h2 {
+      font-size: 32px;
+    }
+  
+    .blog-content h3 {
+      font-size: 20px;
+    }
+  
+    .blog-content p {
+      font-size: 14px;
+    }
+  
+    .ending {
+      font-size: 14px;
+    }
+  }
+  /* footer */
+
+
+.container1 {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo img {
+  max-height: 100px;
+  max-width: 100px;
+  
+}
+
+.info p {
+  margin: 5px 0;
+}
+.info{
+  font-size: 13px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 10px;
+}
+
+.links a:hover {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  height: 105px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0px;
+}

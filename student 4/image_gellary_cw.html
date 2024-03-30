@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>top destinations</title>
+    <link href="CWstylesheet.css" rel="stylesheet">
+
+
+
+    <style id="blackBar">
+        #imgText {
+            display: none;
+        }
+    </style>
+    <script>
+        function textcolor() {
+            const btn1 = document.getElementById('btn1');
+            btn1.addEventListener('click', function onClick(event) {
+                document.body.style.color = '#c78708';
+            });
+
+            const btn2 = document.getElementById('btn2');
+            btn2.addEventListener('click', function onClick(event) {
+                document.body.style.color = '#8f3199';
+            });
+
+            const btn3 = document.getElementById('btn3');
+            btn3.addEventListener('click', function onClick(event) {
+                document.body.style.color = '#5257d9';
+            });
+
+        }
+
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+            showBar();
+        }
+
+        function showBar() {
+            document.getElementById("blackBar").innerHTML = "#imgtext{\n" +
+                "  position: absolute;\n" +
+                "  top: 235px;\n" +
+                "  left: 0px;\n" +
+                "  color: white;\n" +
+                "  font-size: 23px;\n" +
+                "  background: rgb(0,0,0);\n" +
+                "  background: rgba(0,0,0,0.4);\n" +
+                "  width: 100%;\n" +
+                "  height: 100%;\n" +
+                "  padding: 0;\n" +
+                "\n" +
+                "}"
+        }
+
+        function darkMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+        }
+
+        function lightMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../student 2/mainpage.html" class="logoheader">
+                <img src="web_documents/Travel_Lanka-1.png" alt="Site Logo" />
+            </a>
+        </div>
+        <nav>
+            <a href="../student 3/about.html">About us</a>
+            <a href="../student 3/Quiz.html">Quiz </a>
+            <a href="svgdiagram.html">Site map</a>
+            <a href="../student 2/comment.html">Comment Form</a>
+            <a href="../student 1/buyproducts.html">Shop</a>
+            <a href="image_gellary_cw.html">Gallery</a>
+            <a href="../student 2/mainpage.html">Home</a>
+        </nav>
+    </header>
+    <div class="dropdown">
+        <button class="dropbtn"><b>Theme</b> 
+			<i class="fa fa-caret-down"></i>
+		</button>
+        <div class="dropdown-content">
+            <button onclick="darkMode()">Dark theme</button>
+            <button onclick="lightMode()">Light theme</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"><b>Text colour</b> 
+			<i class="fa fa-caret-down"></i>
+		</button>
+        <div class="dropdown-content">
+            <button onclick="textcolor()" id="btn1">#c78708</button>
+            <button onclick="textcolor()" id="btn2">#8f3199</button>
+            <button onclick="textcolor()" id="btn3">#5257d9</button>
+        </div>
+    </div>
+
+
+    <h1><u>Top  Destinations In Sri Lanka...</u></h1>
+
+    <div class="imgLine">
+        <a href="test.html"><img src="web_documents/colombo.jpg" alt="<h6>Colombo is the commercial capital and the largest city of Sri Lanka by population. 
+		As the country's capital city, it's also filled with museums and places to visit that illustrate Sri Lanka's rich history.</h6>" width="400" height="200" onmouseover="myFunction(this);"></a>
+        <h3>Colombo - Sri Lanka</h3>
+    </div>
+
+
+    <div class="imgLine">
+        <a href="test.html"><img src="web_documents/ella.jpg" alt="<h6>Ella is a small town in the Badulla District of Uva Province.
+		The area has a rich bio-diversity, dense with numerous varieties of flora and fauna. </h6>" width="400" height="200" onmouseover="myFunction(this);"></a>
+        <h3>Ella - Sri Lanka</h3>
+    </div>
+
+    <div class="imgLine">
+        <a href="test.html"><img src="web_documents/galle.jpg" alt="<h6>Galle Fort, in the Bay of Galle on the southwest coast of Sri Lanka, was built first in 1588 by the Portuguese, then extensively fortified by the Dutch during the 17th century from 1649 onwards.
+		</h6>" width="400" height="200" onmouseover="myFunction(this);"></a>
+        <h3>Galle Fort - Sri Lanka</h3>
+    </div>
+
+    <div class="imgLine">
+        <a href="test.html"><img src="web_documents/hikka.jpg" alt="<h6>Trincomalee is a port city on the northeast coast of Sri Lanka. Fort Frederick was built by the Portuguese in the 17th century. 
+		Within its grounds, the grand Koneswaram Temple stands on Swami Rock cliff, a popular vantage point for blue-whale watching. </h6>" width="400" height="200" onmouseover="myFunction(this);"></a>
+        <h3>Trincomalee - Sri Lanka</h3>
+    </div>
+
+    <div class="imgLine">
+        <a href="test.html"><img src="web_documents/sigiriya.jpg" alt="<h6>Sigiriya was designated as a world heritage site in 1982. Sigiriya is famous for it's palace ruins on top of a massive 200 meter high rock surrounded by the remains of an extensive network of gardens,
+ reservoirs and other structures.</h6>" width="400" height="200" onmouseover="myFunction(this);"></a>
+        <h3>Sigiriya - Sri Lanka</h3>
+    </div>
+
+    <br><br><br><br><br>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img src="web_documents/image.jpg" id="expandedImg" alt=" " style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <footer>
+        <div class="container1">
+            <div class="logo">
+                <a href="../student 2/mainpage.html ">
+                    <img src="web_documents/Travel_Lanka-1.png " alt="Site Logo " />
+                </a>
+            </div>
+            <div class="links">
+                <a href="../student 3/about.html">About us</a>
+                <a href="../student 3/Quiz.html">Quiz </a>
+                <a href="svgdiagram.html">Site map</a>
+                <a href="../student 2/comment.html">Comment Form</a>
+                <a href="../student 1/buyproducts.html">Shop</a>
+                <a href="image_gellary_cw.html">Gallery</a>
+                <a href="../student 2/mainpage.html">Home</a>
+
+            </div>
+            <div class="info">
+                <p>132 Main St, colombo 7</p>
+                <p>Phone: 0702029876</p>
+                <p>Email: uvindu2003@gmail.com</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

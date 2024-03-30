@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-image: url("greycolor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+        
+  }
+  
+  /* Blog post styles */
+  .blog-post {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffffbf;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .blog-hero {
+    margin-top: 10px;
+    background-image: url('nadil.jpg');
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    justify-content: center;
+   
+  }
+  
+  .blog-content h2 {
+    text-align: center;
+    margin-top: 15px;
+   
+  }
+  .blog-content1 .linkpage{
+    text-align: center;
+  }
+  .blog-content1 h3{
+    text-align: center;
+    margin-top: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgba(3, 3, 3, 0.733)
+  }
+  
+ 

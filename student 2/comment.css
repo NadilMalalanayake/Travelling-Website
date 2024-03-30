@@ -1,0 +1,175 @@
+/* Header styles */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    /* Add this line to make the header a flex container */
+    justify-content: space-between;
+    /* Add this line to align logo to the left */
+    align-items: center;
+    /* Add this line to vertically center the items */
+}
+
+.logo {
+    margin-left: 16px;
+    /* Adjust the margin as needed */
+}
+
+
+/*quiz*/
+
+nav {
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+nav a {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid;
+}
+
+body {
+    background-image: url("ninearch.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+form#comment-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+form div {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+label[for^="rating"] {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+form input[type="radio"]+label {
+    margin-right: 10px;
+}
+
+form button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+#form-message {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* footer */
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.container1 {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: gray;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.links a:hover {
+    border-bottom: 2px solid;
+}
+
+footer {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+}

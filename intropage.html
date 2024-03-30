@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro Page</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+  overflow: hidden;
+}
+
+.logo p {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  color: white;
+}
+.group-name {
+  width: fit-content;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 40px;
+  color: rgb(255, 244, 35);
+}
+.team-mem {
+  margin-top: 10px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-align: center;
+  color: rgb(245, 255, 61);
+}
+.members {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-align: center;
+  color: rgb(247, 229, 36);
+}
+.content {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #9494947d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  position: relative;
+}
+
+#loading {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <p>University of Westminster - School of CS & SE</p>
+    </div>
+
+    <div class="content">
+        <div class="group-name">
+            <h2>Group I-3</h2>
+        </div>
+        <div class="team-mem">
+            <p>Team Members</p>
+        </div>
+
+        <div class="members">
+            <p>
+                Mihan fernando : W1953506/20220683<br /> Dulanjana Kodithuwakku : w1953524/20220715<br /> Nadil Malalanayake : w1953519/20220705<br /> Uvindu Ayshcharya : w1953527/20220718
+            </p>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "student 2/mainpage.html";
+        }, 3000);
+    </script>
+    <video autoplay muted loop id="loading">
+      <source src="student 1/loading.mp4" type="video/mp4" />
+    </video>
+</body>
+
+</html>

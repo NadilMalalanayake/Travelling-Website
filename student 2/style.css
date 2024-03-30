@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* set styles for the navigation bar */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    /* Add this line to make the header a flex container */
+    justify-content: space-between;
+    /* Add this line to align logo to the left */
+    align-items: center;
+    /* Add this line to vertically center the items */
+}
+
+.logo {
+    margin-left: 16px;
+    /* Adjust the margin as needed */
+}
+
+nav {
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+nav a {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid;
+}
+
+
+/* set styles for the brief on the left side */
+
+.brief {
+    position: relative;
+    font-size: 20px;
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+
+/* .intro {
+    text-align: center;
+    background-color: grey;
+} */
+
+
+/* set styles for the dive boxes */
+
+.main {
+    margin-top: 240px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #eee;
+    height: 325px;
+    width: 900px;
+    left: 394px;
+}
+
+.box:hover .overlay {
+    opacity: 1;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+/* set styles for the background video */
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/* set styles for the dive boxes */
+
+.topic {
+    width: 25%;
+    height: 200px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.topic:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+
+/* set styles for the background video */
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/*footer*/
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.container1 {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: gray;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.links a:hover {
+    border-bottom: 2px solid;
+}
+
+footer {
+    height: 105px;
+    width: 100%;
+    position: absolute;
+    top: 2000px;
+    background-color: whitesmoke;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+}
